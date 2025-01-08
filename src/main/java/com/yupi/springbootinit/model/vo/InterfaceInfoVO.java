@@ -1,15 +1,19 @@
-package com.yupi.springbootinit.model.dto.interfaceinfo;
+package com.yupi.springbootinit.model.vo;
 
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
- * 更新请求
+ * @Author: SixAn
+ * @Date: 2025-01-08 18:38
+ * @Description: 接口信息 视图封装类
  */
+@SuppressWarnings({"all"})
 @Data
-public class InterfaceInfoUpdateRequest implements Serializable {
-    private static final long serialVersionUID = 1L;
+public class InterfaceInfoVO implements Serializable {
+    private static final long serialVersionUID = 8929446817439981986L;
     /**
      * 主键
      */
@@ -42,4 +46,16 @@ public class InterfaceInfoUpdateRequest implements Serializable {
      * 请求类型
      */
     private String method;
+    /**
+     * 创建人
+     */
+    private Long userId;
+    /**
+     * 创建时间
+     */
+    private Date createTime;
+    /**
+     * 更新时间
+     */
+    private Date updateTime;
 }

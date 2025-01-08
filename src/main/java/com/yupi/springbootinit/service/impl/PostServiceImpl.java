@@ -48,6 +48,7 @@ import java.util.stream.Collectors;
  */
 @Service
 @Slf4j
+@SuppressWarnings({"all"})
 public class PostServiceImpl extends ServiceImpl<PostMapper, Post> implements PostService {
     @Resource
     private UserService userService;
